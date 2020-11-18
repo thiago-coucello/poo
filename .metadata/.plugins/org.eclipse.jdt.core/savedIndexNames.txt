@@ -1,0 +1,18 @@
+INDEX VERSION 1.131+C:\Users\thiag\OneDrive\Documentos\Disciplinas\2020.1\Programação Orientada a Objetos\.metadata\.plugins\org.eclipse.jdt.core
+2127704158.index
+735705145.index
+1967280899.index
+2556749049.index
+2530783744.index
+2811181442.index
+400137348.index
+2103730723.index
+130844197.index
+1896301004.index
+4016297071.index
+3545872848.index
+3563671829.index
+2454138676.index
+2668175584.index
+100692314.index
+361813972.index
