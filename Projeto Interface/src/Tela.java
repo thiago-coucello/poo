@@ -12,6 +12,7 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 import java.awt.BorderLayout;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -19,8 +20,8 @@ import java.awt.event.ActionListener;
 public class Tela extends JFrame {
     private List<Estado> lista = new ArrayList<Estado>();
     private JMenuBar barraPrincipal;
-    private JMenu Cadastrar, Relatorios, Sair;
-    private JMenuItem cadastrarFisica, cadastrarJuridica, cadastrarIPVA;
+    private JMenu Cadastrar, Relatorios;
+    private JMenuItem cadastrarFisica, cadastrarJuridica, cadastrarIPVA, Sair;
     private JMenuItem relatorioFisica, relatorioJuridica, relatorioIPVA, relatorioGeral;
     private JDesktopPane janela;
     private JPanel painelPrincipal, painelBotoes, painelBase;
@@ -36,7 +37,8 @@ public class Tela extends JFrame {
 
         Cadastrar = new JMenu("Cadastrar");
         Relatorios = new JMenu("Relatorios");
-        Sair = new JMenu("Sair");
+        Sair = new JMenuItem("Sair");
+        Sair.setMaximumSize(new Dimension(40, 20));
 
         cadastrarFisica = new JMenuItem("Cadastrar pessoa fisica");
         cadastrarJuridica = new JMenuItem("Cadastrar pessoa jurídica");
@@ -330,10 +332,14 @@ public class Tela extends JFrame {
 
             @Override
             public void actionPerformed(ActionEvent e) {
-
+            	fechar();
             }
 
         });
+    }
+    
+    public void fechar() {
+    	this.dispose();
     }
 
     public static void main(String[] args) {
